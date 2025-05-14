@@ -1,0 +1,259 @@
+		/* Create four equal columns that floats next to eachother */
+		.colum {
+		  float: left;
+		  width: 25%;
+		}
+		
+		.modal-content .colum{ width: 25%; float: left}
+
+		/* The Modal (background) */
+		.modal {
+		  display: none;
+  		      /*position: absolute;*/
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+			
+		  	
+		}
+
+		/* Modal Content */
+		/*.modal-content {position:  fixed;
+    top: 200px;
+    left: 19%;
+		display: block !important;	
+		  margin: auto;
+		  padding: 100px;
+		  width: 100%;
+		  max-width: 1200px;
+			background: -webkit-linear-gradient(#90d24b, #19ae4e);
+			text-align: center;
+			border-radius: 0px;
+			height: 553px;
+		}*/
+
+		/* The Close Button */
+		.close {
+		  color: white;
+		  position: absolute;
+		  top: 10px;
+		  right: 25px;
+		  font-size: 35px;
+		  font-weight: bold;
+		}
+
+		.close:hover,
+		.close:focus {
+		  color: #999;
+		  text-decoration: none;
+		  cursor: pointer;
+		}
+
+		/* Hide the slides by default */
+		.mySlides {
+		  display: none;
+		}
+			.mySlides h1{  color: #fff; font:normal 50px/50px 'Montserrat', sans-serif}	
+			.mySlides h1 span{ color: #fff; font:800 50px/50px 'Montserrat', sans-serif}
+			.mySlides p{  color: #fff ; font:normal 24px/34px 'Montserrat', sans-serif}
+			.mySlides img{    height: 250px;    border-style: none;    margin: -200px 0 78px 81px;}	
+			.colum2{ width:25%; padding: 10px 20px; margin: 40px 0 0 0 }
+			.colum2 a{color: #ADDF78; font:800 20px/28px 'Montserrat', sans-serif}
+		/* Next & previous buttons */
+			#prev-next{    width: 100%; position: absolute; left: 0px; top: 288px;}	
+			
+		.prev,
+		.next {
+		  cursor: pointer;
+		  position: absolute;
+		  top: 50%;
+		  width: auto;
+		  padding: 16px;
+		  margin-top: -50px;
+		  color: white;
+		  font-weight: bold;
+		  font-size: 20px;
+		  transition: 0.6s ease;
+		  border-radius: 0 3px 3px 0;
+		  user-select: none;
+		  -webkit-user-select: none;
+		}
+			.prev{left:0px}	
+
+		/* Position the "next button" to the right */
+		.next {
+		  right: 0;
+		  border-radius: 3px 0 0 3px;
+		}
+
+		/* On hover, add a black background color with a little bit see-through */
+		.prev:hover,
+		.next:hover {
+		  background-color: rgba(0, 0, 0, 0.8);
+		}
+
+		/* Number text (1/3 etc) */
+		.numbertext {
+		  color: #f2f2f2;
+		  font-size: 12px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  top: 0;
+		}
+
+		/* Caption text */
+		.caption-container {
+		  text-align: center;
+		  background-color: black;
+		  padding: 2px 16px;
+		  color: white;
+		}
+
+		img.demo {
+		  opacity: 0.6;
+		  width: 100%; 
+		  display: inline-block
+		
+		}
+
+		.active,
+		.demo:hover {
+		  opacity: 1;
+		  color: #ffffff !important;
+		}
+
+		img.hover-shadow {
+		  transition: 0.3s;
+		}
+
+		.hover-shadow:hover {
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+			
+		#schedule {
+    padding-bottom: 125px;
+    position: relative;
+    z-index: -100;
+}
+
+.greenmodal .modal-content{ /*height: auto !important; width: 100%; left: 0px; top: 30px; max-width: 100% !important; padding: 0px !important; */background: none !important; text-align: center;}
+.greenmodal.modal:before{ width: 100%; height: 100%; background: rgba(0,0,0,0.7); content: ""; position: fixed; top: 0px; left: 0px;}
+.modal-contentinn{
+    background: linear-gradient(99.95deg, #169A45 64.93%, #7ACB4B 296.63%); padding: 40px !important; max-width: 1100px; margin: 70px auto;display: inline-block;}
+.greenmodal.modal{ z-index: 111111;}
+.greenmodal .mySlides img {
+    height: auto;
+    border-style: none;
+    margin: -110px 0 21px 81px;
+}
+.greenmodal .colum2{ border-right:1px solid #ADDF78}
+.greenmodal .colum2:last-child{ border: none;}
+.greenmodal .prev{ background: url(../img/prev.png) no-repeat center center;}
+.greenmodal .next{ background: url(../img/next.png) no-repeat center center;}
+
+.greenmodal .prev, .greenmodal .next{padding: 26px;
+margin-top: 0;}
+
+
+@media (max-width: 1199px) {
+
+.mySlides h1, .mySlides h1 span{ font-size: 45px !important; line-height: 50px !important;}
+.mySlides p{ font-size: 20px;}
+.modal-contentinn{ max-width: 900px !important;}
+.colum2 a{ font-size: 17px; line-height: 25px;}
+
+
+
+
+}
+@media (max-width: 991px) {
+
+
+.modal-contentinn{ max-width: 700px !important;}
+
+.mySlides h1, .mySlides h1 span {
+    font-size: 31px !important;
+    line-height: 34px !important;
+}
+.mySlides p {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.colum2 a {
+    font-size: 14px;
+    line-height: 18px;
+    display: inline-block;
+}
+.modal-contentinn{ padding: 15px !important;}
+.colum2{ padding: 10px 7px;}
+#prev-next{ top: 50%;}
+
+
+
+
+
+
+}
+@media (max-width: 767px) {
+.modal-contentinn{ max-width: 90% !important;}
+.mySlides h1, .mySlides h1 span {
+    font-size: 26px !important;
+    line-height: 25px !important;
+    margin-bottom: 10px !important;
+}
+.mySlides p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.colum2{ margin: 12px 0 0 0;}
+.greenmodal .mySlides img {
+    height: auto;
+    border-style: none;
+    margin: -75px auto 20px 35px;
+    width: 152px;
+}
+.boxinvoic .box-wrap::before {
+    width: 290px;
+    height: 290px;}
+
+}
+
+@media (max-width: 480px) {
+
+.modal-content .colum{ width: 50%;}
+.modal-content .colum:nth-child(2){ border-right: none !important;}
+
+
+
+
+}
+
+@media (max-width: 400px) {
+
+.modal-content .colum{ width: 100%; border-right: none !important; border-bottom: 1px solid #ADDF78;}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
